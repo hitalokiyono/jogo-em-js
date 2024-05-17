@@ -1,0 +1,29 @@
+/* INPUTS */
+
+input[type="text"], input[type="tel"],
+input[type="password"]{
+    height: 35px; /* altura da linha */
+    width: 100%; /*largura da linha */
+    border-radius: 5px; /* cantos arredondados */
+    border: 1px solid #888; /* espessura da borda, estilo e cor */
+    padding: 5px; /* espaçamento interno do input para distânciar texto da borda */
+    font-weight: 1.2rem; /* aumenta em 10% o tamanho padrão da fonte */
+}
+input[type="reset"]{
+    padding: 20px 40px;
+    border: 1px solid #888;
+    cursor: pointer;
+    border-radius: 5px;
+     margin-right: 15px;
+}
+
+input[type="submit"]{
+    padding: 20px 40px;
+    border: 1px solid green;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+/* INPUTS FINAL */

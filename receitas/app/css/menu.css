@@ -1,0 +1,275 @@
+
+*{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center; /* centraliza na vertical */
+    flex-direction: column;
+    height: 100vh;
+}
+
+.botao{
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 50%;
+    margin: 10 auto;
+    margin-bottom: 50px;
+}
+
+/* TABELA */
+
+table{
+    margin-left: 60px;
+    border: 1px solid #999;
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td, th{
+   
+    border: 1px solid #999;
+    padding: 3px;
+}
+
+th{
+    height: 45px;
+    background-color: #555;
+    color: white;
+}
+tr{
+    background-color: #f5d2b5;
+}
+
+
+tr:hover{
+    background-color: #aca7a7;
+}
+
+/* TABELA FINAL */
+
+.titulo {
+    font-weight: lighter;
+    display: flex;
+    background-color: #ccc;
+    padding: 5px;
+}
+.titulo h1{
+    font-family:cursive;
+margin-left: 38%;
+
+}
+
+.row{
+    width:100%;
+    gap: 5px;
+    margin: 10px;
+    margin-bottom: 13px;
+}
+
+.col{
+    margin-bottom: 13px;
+    margin-left: 50px;
+    width: 30%;
+    
+}
+textarea {
+    resize: none;
+   
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Estilo quando o campo está em foco */
+textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Mudar a cor da borda quando em foco */
+}
+
+#imagemPreview {
+    position: absolute;
+    border: 2px solid #a19d9d;
+    left: 45%; 
+top: 24%;
+width: 100%;
+height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    background-color: #333;
+    padding: 10px 20px;
+}
+.menu-icon {
+    z-index: 999990;
+    cursor: pointer;
+    width: 50px;
+    padding: 5px;
+}
+.line {
+    height: 3px;
+    background-color: rgb(224, 129, 74);
+    margin: 5px 0;
+}
+
+#a{
+    width: 15px;
+    animation: interativo 3s infinite;
+}
+
+#b{
+    width: 20px;
+    animation: interativo 1.5s infinite;
+}
+
+#c{
+    width: 25px;
+    animation: interativo 1s infinite;
+}
+@keyframes interativo {
+    0% {
+        width:25px;
+    }
+    50% {
+        width:30px;
+    }
+    100% {
+        width:45px;
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    background-color: #555;
+}
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+}
+.sidenav {  
+    z-index: 999990;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#ronnie {
+   color: coral;
+    margin-left: 20%;
+    display: flex;
+    animation: moverParaDireita 1s forwards;
+}
+
+
+.cad {
+ padding: 1%;
+ margin-top: 1%;
+    margin-left: 2%;
+   width: 96%;
+    background-color: #f0ddcd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#nome1{
+    margin-top: 170%;
+    }
+#nome1:hover{
+    animation: moverParaDireita 1s forwards;
+}
+
+@keyframes moverParaDireita {
+    0% {
+        transform: translateX(600px);
+    }
+    50% {
+        transform: translateX(0px); 
+    }
+    100% {
+        transform: translateX(600px);
+    }
+}
+
+#snake{
+    right: 0%;
+    z-index: 99999;
+    position: absolute;
+ padding: 0%;   
+    margin: 0%;
+display: flex;
+width: 10%;
+animation: moversnake 5s  infinite;
+}
+@keyframes moversnake {
+    0% {
+        transform: translateX(150px);
+    }
+    50% {
+        transform: translateX(-30%); 
+    }
+    100% {
+        transform: translateX(-1000%);
+    }
+}
+
+#snakepng{
+z-index:-990 ;
+opacity: 0.4;
+display: flex;
+position: fixed;
+object-fit: cover;
+margin-top: -10%;
+}

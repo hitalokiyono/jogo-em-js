@@ -1,0 +1,17 @@
+.contaiiner{
+    width: 99.2%;
+   
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col {
+
+    min-width: 25%;
+    max-width: 25%;
+    max-height:10%;
+}

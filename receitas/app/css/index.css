@@ -1,0 +1,77 @@
+body{
+    
+}
+
+.contaiiner{
+    width: 100%;
+   margin-top: 5px;
+}
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 10px;
+}
+
+.col1 {
+    flex: 0 0 22%; 
+    min-width: 22%;
+    min-height: 40%;
+}
+
+.receita {
+    width: 100%; /* Defina a largura total para ocupar o espaço disponível */
+    height: 100%; /* Altura fixa para cada receita */
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.receita:hover{
+    background-color: #ebbe84;
+}
+
+
+.receita img {
+    font-size: small;
+    width: 100%;
+    height: auto;
+    max-height: 130px; /* Altura máxima para a imagem */
+    object-fit: cover; /* Manter a proporção da imagem */
+    border-radius: 5px;
+}
+
+
+.receita h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.receita p {
+    margin: 0;
+}
+
+
+.video-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 500px;
+    height: 280px;
+    border: 1px solid #ccc;
+    opacity: 0.8;
+    overflow-y: hidden;
+   
+}
+.titulo{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.containerreceita{
+    width: 100%;
+margin-top: 20px;
+margin-bottom: 10px;
+}
